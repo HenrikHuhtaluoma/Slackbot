@@ -27,11 +27,11 @@ def handle_command(command, channel):
     if command.startswith(EXAMPLE_COMMAND):
         response = "Sure...write some more code then I can do that!"
     slack_client.api_call("chat.postMessage", channel=channel,
-                          text=response, as_user=True),
+                          text=response, as_user=True)
     if command.startswith(LUNCH_COMMAND):
-	response = "Tässä lähimmät lounasravintolat: https://www.foodora.fi/"
+	response = "Check out nearest eating places here: https://foodora.fi"
     slack_client.api_call("chat.postMessage", channel=channel,
-			  text=response, as_user=True),	
+			  text=response, as_user=True)	
 
 
 def parse_slack_output(slack_rtm_output):
