@@ -35,7 +35,7 @@ def handle_command(command, channel):
 
 
 def parse_slack_output(slack_rtm_output):
-    print("Vastauksien testaus")
+    print("running...!")
     """
         The Slack Real Time Messaging API is an events firehose.
         this parsing function returns None unless a message is
